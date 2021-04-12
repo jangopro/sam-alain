@@ -1,8 +1,7 @@
-import React from 'react'
-import Info from './Info';
-import ServicesSection from './ServicesSection';
-import ContactForm from './ContactForm';
-
+import React from "react";
+import Info from "./Info";
+import ServicesSection from "./ServicesSection";
+import ContactForm from "./ContactForm";
 
 export default function Home() {
     return (
@@ -11,5 +10,5 @@ export default function Home() {
             <ContactForm />
             <Info />
         </div>
-    )
+    );
 }

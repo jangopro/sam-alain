@@ -1,16 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-  } from "react-router-dom";
-import About from '../pages/About';
-import Services from '../pages/Services';
-import Footer from './Footer';
-import Header from './Header';
-import Home from './Home';
-
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import About from "../pages/About";
+import Services from "../pages/Services";
+import Footer from "./Footer";
+import Header from "./Header";
+import Home from "./Home";
 
 function App() {
     return (
@@ -38,6 +33,6 @@ function App() {
 
 export default App;
 
-if (document.getElementById('app')) {
-    ReactDOM.render(<App />, document.getElementById('app'));
+if (document.getElementById("app")) {
+    ReactDOM.render(<App />, document.getElementById("app"));
 }
