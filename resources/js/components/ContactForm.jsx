@@ -1,5 +1,7 @@
 import React from "react";
 
+//TODO: for des label + id des inputs
+
 export default function ContactForm() {
     return (
         <section id="contact-form">
