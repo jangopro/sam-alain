@@ -1,5 +1,5 @@
-import React from "react";
 import { Link } from "react-router-dom";
+import React from "react";
 
 export default function Header() {
     return (
@@ -23,7 +23,7 @@ export default function Header() {
                     </li>
                     <li className="nav-item">
                         <a
-                            href="#contact-form"
+                            href="/#contact-form"
                             className="nav-link btn btn-primary"
                         >
                             Contact
