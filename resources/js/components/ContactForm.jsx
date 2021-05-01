@@ -5,6 +5,7 @@ import React from "react";
 export default function ContactForm() {
     return (
         <section id="contact-form">
+            <h2>Contact</h2>
             <form>
                 <div className="form-row">
                     <div className="form-group col-md-6">
