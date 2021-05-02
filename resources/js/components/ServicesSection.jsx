@@ -1,4 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 import React from "react";
 import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 
@@ -33,6 +34,11 @@ export default function ServicesSection() {
                         <strong>Gestion de situations inhabituelles</strong>
                     </div>
                 </div>
+            </div>
+            <div className="row">
+                <Link to="/services" className="btn btn-primary">
+                    En savoir plus
+                </Link>
             </div>
         </section>
     );
