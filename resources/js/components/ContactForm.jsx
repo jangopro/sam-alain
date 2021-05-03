@@ -1,22 +1,60 @@
-import React from "react";
+import React, { useState } from "react";
+
+import axios from "axios";
 
 //TODO: for des label + id des inputs
 
 export default function ContactForm() {
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+    });
+
+    function onSubmitButton(event) {
+        event.preventDefault();
+        axios
+            .post("/games", {
+                name: formData.name,
+                email: formData.email,
+            })
+            .then(function (response) {
+                console.log(response.data);
+            });
+    }
     return (
         <section id="contact-form">
             <h2>Contact</h2>
-            <form>
+            <form onSubmit={onSubmitButton}>
                 <div className="form-row">
                     <div className="form-group col-md-6">
-                        <label htmlFor="inputEmail4">Nom:</label>
-                        <input type="text" className="form-control" required />
+                        <label htmlFor="nom">Nom:</label>
+                        <input
+                            type="text"
+                            className="form-control"
+                            id="nom"
+                            required
+                            onChange={(event) =>
+                                setFormData({
+                                    ...formData,
+                                    ["name"]: event.target.value,
+                                })
+                            }
+                        />
                     </div>
                     <div className="form-group col-md-6">
                         <label htmlFor="inputPassword4">
                             Adresse courriel:
                         </label>
-                        <input type="email" className="form-control" required />
+                        <input
+                            type="email"
+                            className="form-control"
+                            onChange={(event) =>
+                                setFormData({
+                                    ...formData,
+                                    ["email"]: event.target.value,
+                                })
+                            }
+                        />
                     </div>
                 </div>
                 <div className="form-group">
