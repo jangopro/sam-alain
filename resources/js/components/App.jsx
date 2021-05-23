@@ -1,31 +1,39 @@
+import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
+
+import About from "../pages/About";
+import Home from "./Home";
+import MainLayout from "../layouts/MainLayout";
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import About from "../pages/About";
 import Services from "../pages/Services";
-import Footer from "./Footer";
-import Header from "./Header";
-import Home from "./Home";
+import Welcome from "../pages/Welcome";
 
 function App() {
     return (
         <Router>
-            <div>
-                <Header />
-                <div className="container">
-                    <Switch>
+            <div className="container">
+                <Switch>
+                    <>
                         <Route path="/services">
-                            <Services />
+                            <MainLayout>
+                                <Services />
+                            </MainLayout>
                         </Route>
                         <Route path="/a-propos">
-                            <About />
+                            <MainLayout>
+                                <About />
+                            </MainLayout>
                         </Route>
-                        <Route path="/">
-                            <Home />
+                        <Route path="/home">
+                            <MainLayout>
+                                <Home />
+                            </MainLayout>
                         </Route>
-                    </Switch>
-                </div>
-                <Footer />
+                        <Route exact path="/">
+                            <Welcome />
+                        </Route>
+                    </>
+                </Switch>
             </div>
         </Router>
     );
