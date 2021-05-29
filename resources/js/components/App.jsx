@@ -5,6 +5,7 @@ import Home from "./Home";
 import MainLayout from "../layouts/MainLayout";
 import React from "react";
 import ReactDOM from "react-dom";
+import SecondLayout from "../layouts/SecondLayout";
 import Services from "../pages/Services";
 import Welcome from "../pages/Welcome";
 
@@ -28,6 +29,11 @@ function App() {
                             <MainLayout>
                                 <Home />
                             </MainLayout>
+                        </Route>
+                        <Route path="/home-2">
+                            <SecondLayout>
+                                <Home />
+                            </SecondLayout>
                         </Route>
                         <Route exact path="/">
                             <Welcome />

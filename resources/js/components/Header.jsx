@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
 import React from "react";
 
-export default function Header() {
+export default function Header({ light = true }) {
+    const themeClass = light ? "bg-light" : "bg-dark";
     return (
         <header className="pb-md-4">
-            <nav className="navbar navbar-light bg-light">
+            <nav className={`navbar navbar-light ${themeClass}`}>
                 <h1 className="navbar-brand">
                     <Link to="/" className="nav-link">
                         Samuel Alain
@@ -22,12 +23,13 @@ export default function Header() {
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <a
-                            href="/#contact-form"
+                        <Link
+                            to="/home#contact-form"
+                            as="button"
                             className="nav-link btn btn-primary"
                         >
                             Contact
-                        </a>
+                        </Link>
                     </li>
                 </ul>
             </nav>
