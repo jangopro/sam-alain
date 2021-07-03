@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Home() {
     return (
-        <section className="row justify-content-md-center">
+        <section>
             <h2>Titre</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.

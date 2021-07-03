@@ -4,6 +4,8 @@
 // Bootstrap
 // @import "~bootstrap/scss/bootstrap";
 
+//TODO: add styles for forms
+
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
@@ -93,7 +95,26 @@ footer {
     margin-left: auto;
 }
 
+// Row
+.row {
+    display: flex;
+}
+
+.col-md-3 {
+    width: 25%;
+}
+
+.col-md-6 {
+    width: 50%;
+}
+
 // text utilities
 .text-center {
     text-align: center;
+}
+
+// Images
+.img-fluid {
+    max-width: 100%;
+    height: auto;
 }
