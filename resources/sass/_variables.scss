@@ -1,19 +1,27 @@
 // Body
+
+html {
+    --bg: #fff;
+    --bg-panel: #ebebeb;
+    --color-heading: rgb(27, 168, 14);
+    --color-text: #333333;
+}
+
+.container[data-theme="dark"] {
+    --bg: #172121;
+    --bg-panel: #434343;
+    --color-heading: #fff;
+    --color-text: #b5b5b5;
+    --primary-color: #915d1b;
+    $black: #172121;
+    $yellow: #e3c567;
+    $blue: #247ba0;
+    $blueGrey: #848fa5;
+}
+
 $body-bg: #f8fafc;
 
 // Typography
-$font-family-sans-serif: 'Nunito', sans-serif;
+$font-family-sans-serif: "Nunito", sans-serif;
 $font-size-base: 0.9rem;
 $line-height-base: 1.6;
-
-// Colors
-$blue: #3490dc;
-$indigo: #6574cd;
-$purple: #9561e2;
-$pink: #f66d9b;
-$red: #e3342f;
-$orange: #f6993f;
-$yellow: #ffed4a;
-$green: #38c172;
-$teal: #4dc0b5;
-$cyan: #6cb2eb;

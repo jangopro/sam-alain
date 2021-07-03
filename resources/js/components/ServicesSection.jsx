@@ -35,7 +35,7 @@ export default function ServicesSection() {
                     </div>
                 </div>
             </div>
-            <div className="row">
+            <div className="row text-center">
                 <Link to="/services" className="btn btn-primary">
                     En savoir plus
                 </Link>

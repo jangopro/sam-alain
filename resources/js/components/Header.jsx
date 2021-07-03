@@ -2,13 +2,13 @@ import { Link } from "react-router-dom";
 import React from "react";
 
 export default function Header({ light = true }) {
-    const themeClass = light ? "bg-light" : "bg-dark";
+    const logo = light ? "logo-header-light" : "logo-header-dark";
     return (
-        <header className="pb-md-4">
-            <nav className={`navbar navbar-light ${themeClass}`}>
-                <h1 className="navbar-brand">
+        <header>
+            <nav className="header">
+                <h1>
                     <Link to="/" className="nav-link">
-                        Samuel Alain
+                        <img id="logo-header" src={`img/${logo}.png`} alt="" />
                     </Link>
                 </h1>
                 <ul className="nav">

@@ -12,35 +12,33 @@ import Welcome from "../pages/Welcome";
 function App() {
     return (
         <Router>
-            <div className="container">
-                <Switch>
-                    <>
-                        <Route path="/services">
-                            <MainLayout>
-                                <Services />
-                            </MainLayout>
-                        </Route>
-                        <Route path="/a-propos">
-                            <MainLayout>
-                                <About />
-                            </MainLayout>
-                        </Route>
-                        <Route path="/home">
-                            <MainLayout>
-                                <Home />
-                            </MainLayout>
-                        </Route>
-                        <Route path="/home-2">
-                            <SecondLayout>
-                                <Home />
-                            </SecondLayout>
-                        </Route>
-                        <Route exact path="/">
-                            <Welcome />
-                        </Route>
-                    </>
-                </Switch>
-            </div>
+            <Switch>
+                <>
+                    <Route path="/services">
+                        <MainLayout>
+                            <Services />
+                        </MainLayout>
+                    </Route>
+                    <Route path="/a-propos">
+                        <MainLayout>
+                            <About />
+                        </MainLayout>
+                    </Route>
+                    <Route path="/home">
+                        <MainLayout>
+                            <Home />
+                        </MainLayout>
+                    </Route>
+                    <Route path="/home-2">
+                        <SecondLayout>
+                            <Home />
+                        </SecondLayout>
+                    </Route>
+                    <Route exact path="/">
+                        <Welcome />
+                    </Route>
+                </>
+            </Switch>
         </Router>
     );
 }
