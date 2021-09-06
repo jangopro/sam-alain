@@ -2,7 +2,7 @@
 @import "variables";
 
 // Bootstrap
-// @import "~bootstrap/scss/bootstrap";
+@import "~bootstrap/scss/bootstrap";
 
 //TODO: add styles for forms
 
@@ -73,62 +73,11 @@ footer {
     width: 150px;
 }
 // Button
-.btn {
-    display: inline-block;
-    margin-bottom: 0;
-    font-weight: 400;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    -ms-touch-action: manipulation;
-    touch-action: manipulation;
-    cursor: pointer;
-    background-image: none;
-    border: 1px solid transparent;
-    padding: 6px 12px;
-    font-size: 14px;
-    line-height: 1.42857143;
-    border-radius: 4px;
-    user-select: none;
-}
-
 .btn-primary {
     background-color: var(--primary-color);
     border-color: var(--primary-color);
     color: var(--color-heading);
     text-decoration: none;
-}
-// Container
-.container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-// Row
-.row {
-    display: flex;
-}
-
-.col-md-3 {
-    width: 25%;
-}
-
-.col-md-6 {
-    width: 50%;
-}
-
-// text utilities
-.text-center {
-    text-align: center;
-}
-
-// Images
-.img-fluid {
-    max-width: 100%;
-    height: auto;
 }
 
 // Home
@@ -136,7 +85,6 @@ footer {
     display: flex;
 
     > div {
-
         width: 50%;
     }
 }

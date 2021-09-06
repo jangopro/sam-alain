@@ -15,7 +15,7 @@ export default function ServicesSection() {
                     blanditiis provident sequi. Ea, praesentium!
                 </p>
                 <div>
-                    <Link to="/services" className="btn btn-primary">
+                    <Link to="/services">
                         En savoir plus
                     </Link>
                 </div>
