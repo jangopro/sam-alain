@@ -35,7 +35,9 @@ function App() {
                         </SecondLayout>
                     </Route>
                     <Route exact path="/">
-                        <Welcome />
+                        <SecondLayout>
+                            <Home />
+                        </SecondLayout>
                     </Route>
                 </>
             </Switch>

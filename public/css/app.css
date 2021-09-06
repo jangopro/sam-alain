@@ -28,7 +28,7 @@ body {
 }
 
 section {
-  margin-bottom: 50px;
+  padding: 40px;
 }
 
 footer {
@@ -49,7 +49,15 @@ footer {
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 1rem;
+}
+
+.bg-primary {
   background-color: var(--bg);
+  color: var(--color-heading);
+}
+
+.text-emphasis {
+  color: var(--primary-color);
 }
 
 .nav {
@@ -60,10 +68,13 @@ footer {
   list-style: none;
 }
 
+.nav a:visited {
+  color: var(--color-heading);
+}
+
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: var(--color-heading);
   text-decoration: none;
   background-color: transparent;
 }
@@ -127,5 +138,13 @@ footer {
 .img-fluid {
   max-width: 100%;
   height: auto;
+}
+
+.home-section {
+  display: flex;
+}
+
+.home-section > div {
+  width: 50%;
 }
 
