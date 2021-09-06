@@ -22,30 +22,36 @@ export default function ServicesSection() {
             </div>
 
             <div>
-                <div className="text-center">
-                    <FontAwesomeIcon className="fa-2x" icon={faCoffee} />
-                    <div>
-                        <strong>Psychothérapie</strong>
+                <div className="row">
+
+                    <div className="text-center col-md-6">
+                        <FontAwesomeIcon className="fa-2x" icon={faCoffee} />
+                        <div>
+                            <strong>Psychothérapie</strong>
+                        </div>
+                    </div>
+                    <div className="text-center col-md-6">
+                        <FontAwesomeIcon className="fa-2x" icon={faCoffee} />
+                        <div>
+                            <strong>
+                                Développement des habiletés humaines en gestion
+                            </strong>
+                        </div>
                     </div>
                 </div>
-                <div className="text-center">
-                    <FontAwesomeIcon className="fa-2x" icon={faCoffee} />
-                    <div>
-                        <strong>
-                            Développement des habiletés humaines en gestion
-                        </strong>
+                <div className="row">
+
+                    <div className="text-center col-md-6">
+                        <FontAwesomeIcon className="fa-2x" icon={faCoffee} />
+                        <div>
+                            <strong>Formations sur mesure</strong>
+                        </div>
                     </div>
-                </div>
-                <div className="text-center">
-                    <FontAwesomeIcon className="fa-2x" icon={faCoffee} />
-                    <div>
-                        <strong>Formations sur mesure</strong>
-                    </div>
-                </div>
-                <div className="text-center">
-                    <FontAwesomeIcon className="fa-2x" icon={faCoffee} />
-                    <div>
-                        <strong>Gestion de situations inhabituelles</strong>
+                    <div className="text-center col-md-6">
+                        <FontAwesomeIcon className="fa-2x" icon={faCoffee} />
+                        <div>
+                            <strong>Gestion de situations inhabituelles</strong>
+                        </div>
                     </div>
                 </div>
             </div>
