@@ -9,7 +9,7 @@ import React from "react";
 
 export default function Info() {
     return (
-        <section className="row">
+        <section className="home-section bg-main">
             <div className="col-md-6">
                 <img src="img/carte.png" alt="Carte" className="img-fluid" />
             </div>

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Home() {
     return (
-        <section className="home-section bg-primary">
+        <section className="home-section bg-main">
             <div>
                 <h2>Titre avec <span className="text-emphasis">emphase</span></h2>
                 <p>

@@ -4,7 +4,7 @@ import React from "react";
 export default function Header({ light = true }) {
     const logo = light ? "logo-header-light" : "logo-header-dark";
     return (
-        <header className="bg-primary">
+        <header className="bg-main">
             <nav className="header">
                 <h1>
                     <Link to="/" className="nav-link">

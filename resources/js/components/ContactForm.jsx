@@ -22,7 +22,7 @@ export default function ContactForm() {
             });
     }
     return (
-        <section id="contact-form" className="home-section bg-primary">
+        <section id="contact-form" className="home-section bg-main">
             <div>
                 <h2>Contact</h2>
                 <p>

@@ -7,7 +7,7 @@ html {
     --color-text: #333333;
 }
 
-.container[data-theme="dark"] {
+#app div[data-theme="dark"] {
     --bg: #172121;
     --bg-panel: #434343;
     --color-heading: #fff;

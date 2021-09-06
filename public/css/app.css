@@ -7,7 +7,7 @@ html {
   --color-text: #333333;
 }
 
-.container[data-theme=dark] {
+#app div[data-theme=dark] {
   --bg: #172121;
   --bg-panel: #434343;
   --color-heading: #fff;
@@ -10952,7 +10952,7 @@ footer {
   padding: 0.5rem 1rem;
 }
 
-.bg-primary {
+.bg-main {
   background-color: var(--bg);
   color: var(--color-heading);
 }
