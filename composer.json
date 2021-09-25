@@ -14,7 +14,9 @@
         "guzzlehttp/guzzle": "^6.3",
         "laravel/framework": "^7.24",
         "laravel/tinker": "^2.0",
-        "laravel/ui": "2.4"
+        "laravel/ui": "2.4",
+        "square/square": "14.1.0.20210915",
+        "zohocrm/php-sdk": "3.0.0"
     },
     "require-dev": {
         "facade/ignition": "^2.0",
