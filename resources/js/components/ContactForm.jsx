@@ -1,7 +1,16 @@
 import React, { useState } from "react";
 
 import axios from "axios";
-import { Button, Col, Container, Form, FormControl, FormGroup, FormLabel, Row } from "react-bootstrap";
+import {
+    Button,
+    Col,
+    Container,
+    Form,
+    FormControl,
+    FormGroup,
+    FormLabel,
+    Row,
+} from "react-bootstrap";
 
 //TODO: for des label + id des inputs
 
@@ -10,11 +19,11 @@ export default function ContactForm() {
         name: "",
         email: "",
     });
-    const [submitting, setSubmitting] = useState(false)
+    const [submitting, setSubmitting] = useState(false);
 
     function onSubmitButton(event) {
         event.preventDefault();
-        setSubmitting(true)
+        setSubmitting(true);
         axios
             .post("/contact", {
                 name: formData.name,
@@ -24,26 +33,27 @@ export default function ContactForm() {
                 console.log(response.data);
             })
             .finally(() => {
-                setSubmitting(false)
+                setSubmitting(false);
             });
     }
     return (
         <section id="contact-form" className="bg-main">
             <Container fluid="lg">
                 <Row>
-                    <Col>
+                    <Col md={"6"}>
                         <h2>Contact</h2>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Aperiam, tempore est. Odio numquam omnis tempora, repudiandae
-                            distinctio ex quos mollitia maiores, cum ipsum labore? Ipsum
-                            blanditiis provident sequi. Ea, praesentium!
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Aperiam, tempore est. Odio numquam omnis
+                            tempora, repudiandae distinctio ex quos mollitia
+                            maiores, cum ipsum labore? Ipsum blanditiis
+                            provident sequi. Ea, praesentium!
                         </p>
                     </Col>
-                    <Col>
+                    <Col md={"6"}>
                         <Form onSubmit={onSubmitButton}>
                             <div className="form-row">
-                                <FormGroup controlId="nom">
+                                <FormGroup controlId="nom" className="mb-3">
                                     <FormLabel>Nom:</FormLabel>
                                     <FormControl
                                         onChange={(event) =>
@@ -55,7 +65,7 @@ export default function ContactForm() {
                                         required
                                     />
                                 </FormGroup>
-                                <FormGroup controlId="email">
+                                <FormGroup controlId="email" className="mb-3">
                                     <FormLabel>Adresse courriel:</FormLabel>
                                     <FormControl
                                         type="email"
@@ -67,19 +77,23 @@ export default function ContactForm() {
                                         }
                                         required
                                     />
-
                                 </FormGroup>
                             </div>
-                            <FormGroup controlId="description">
-                                <FormLabel>Brève description du besoin:</FormLabel>
+                            <FormGroup controlId="description" className="mb-3">
+                                <FormLabel>
+                                    Brève description du besoin:
+                                </FormLabel>
                                 <FormControl as="textarea" rows={3} />
                             </FormGroup>
 
-                            <Button variant={'primary'} type={'submit'} disabled={submitting}>
-                                {submitting ? 'Envoi en cours...' : 'Envoyer'}
+                            <Button
+                                variant={"primary"}
+                                type={"submit"}
+                                disabled={submitting}
+                            >
+                                {submitting ? "Envoi en cours..." : "Envoyer"}
                             </Button>
                         </Form>
-
                     </Col>
                 </Row>
             </Container>

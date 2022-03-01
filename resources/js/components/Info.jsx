@@ -14,31 +14,40 @@ export default function Info() {
             <Container fluid="lg">
                 <Row>
                     <Col md="5">
-                        <img src="img/logo-big-white.png" alt="Carte" className="img-fluid info-logo" />
+                        <img
+                            src="img/logo-big-white.png"
+                            alt="Carte"
+                            className="img-fluid info-logo"
+                        />
                     </Col>
                     <Col md="7">
-                        <div className="row">
-                            <div className="col-md-6 left-info-section">
+                        <Row>
+                            <Col md={6} className={"left-info-section"}>
                                 <div className="icon-footer">
-                                    <FontAwesomeIcon icon={faAddressBook} size="3x" />
+                                    <FontAwesomeIcon
+                                        icon={faAddressBook}
+                                        size="3x"
+                                    />
                                 </div>
-                                1375 Boulevard Guillaume-Couture<br />
-                                Bureau 108<br />
-                                Lévis, Qc<br />
+                                1375 Boulevard Guillaume-Couture
+                                <br />
+                                Bureau 108
+                                <br />
+                                Lévis, Qc
+                                <br />
                                 G6W 0P3
-                            </div>
-                            <div className="col-md-6 right-info-section">
+                            </Col>
+                            <Col md={6} className={"right-info-section"}>
                                 <div className="icon-footer">
-                                    <FontAwesomeIcon icon={faMailBulk} size="3x" />
+                                    <FontAwesomeIcon
+                                        icon={faMailBulk}
+                                        size="3x"
+                                    />
                                 </div>
-                                <div>
-                                    info@samuelalainpsy.com
-                                </div>
-                                <div>
-                                    418-208-6497
-                                </div>
-                            </div>
-                        </div>
+                                <div>info@samuelalainpsy.com</div>
+                                <div>418-208-6497</div>
+                            </Col>
+                        </Row>
                     </Col>
                 </Row>
             </Container>

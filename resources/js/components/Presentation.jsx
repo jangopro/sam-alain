@@ -6,17 +6,20 @@ export default function Home() {
         <section className="bg-main">
             <Container fluid="lg">
                 <Row>
-                    <Col>
-                        <h2>Titre avec <span className="text-emphasis">emphase</span></h2>
+                    <Col md={"6"}>
+                        <h2>
+                            Titre avec{" "}
+                            <span className="text-emphasis">emphase</span>
+                        </h2>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Aperiam, tempore est. Odio numquam omnis tempora, repudiandae
-                            distinctio ex quos mollitia maiores, cum ipsum labore? Ipsum
-                            blanditiis provident sequi. Ea, praesentium!
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Aperiam, tempore est. Odio numquam omnis
+                            tempora, repudiandae distinctio ex quos mollitia
+                            maiores, cum ipsum labore? Ipsum blanditiis
+                            provident sequi. Ea, praesentium!
                         </p>
                     </Col>
-                    <Col>
-
+                    <Col md={"6"}>
                         <img src="" alt="" />
                     </Col>
                 </Row>
