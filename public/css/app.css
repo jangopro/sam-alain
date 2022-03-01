@@ -12246,25 +12246,6 @@ footer {
   color: var(--primary-color);
 }
 
-.nav {
-  display: flex;
-  flex-wrap: wrap;
-  padding-left: 0;
-  margin-bottom: 0;
-  list-style: none;
-}
-
-.nav a:visited {
-  color: var(--color-heading);
-}
-
-.nav-link {
-  display: block;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  background-color: transparent;
-}
-
 #logo-header {
   width: 150px;
 }
@@ -12274,14 +12255,6 @@ footer {
   border-color: var(--primary-color);
   color: var(--color-heading);
   text-decoration: none;
-}
-
-.home-section {
-  display: flex;
-}
-
-.home-section > div {
-  width: 50%;
 }
 
 .info-logo {

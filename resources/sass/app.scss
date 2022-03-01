@@ -52,25 +52,6 @@ body{
 
 }
 
-.nav {
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style: none;
-
-    a:visited{
-        color: var(--color-heading);
-    }
-}
-
-.nav-link {
-    display: block;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    background-color: transparent;
-}
-
 #logo-header {
     width: 150px;
 }
@@ -80,15 +61,6 @@ body{
     border-color: var(--primary-color);
     color: var(--color-heading);
     text-decoration: none;
-}
-
-// Home
-.home-section {
-    display: flex;
-
-    > div {
-        width: 50%;
-    }
 }
 
 .info-logo {
