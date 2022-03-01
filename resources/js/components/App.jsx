@@ -3,17 +3,20 @@ import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import About from "../pages/About";
 import Home from "./Home";
 import MainLayout from "../layouts/MainLayout";
-import React from "react";
+import React  from "react";
 import ReactDOM from "react-dom";
 import SecondLayout from "../layouts/SecondLayout";
 import Services from "../pages/Services";
 import Welcome from "../pages/Welcome";
+import SiteContextProvider from "../contexts/siteSectionContext";
+
 
 function App() {
+
     return (
-        <Router>
-            <Switch>
-                <>
+        <SiteContextProvider>
+            <Router>
+                <Switch>
                     <Route path="/services">
                         <MainLayout>
                             <Services />
@@ -36,12 +39,12 @@ function App() {
                     </Route>
                     <Route exact path="/">
                         <SecondLayout>
-                            <Home />
+                            <Welcome />
                         </SecondLayout>
                     </Route>
-                </>
-            </Switch>
-        </Router>
+                </Switch>
+            </Router>
+        </SiteContextProvider>
     );
 }
 
