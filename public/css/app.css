@@ -12228,15 +12228,6 @@ footer {
   margin-top: auto;
 }
 
-.header {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.5rem 1rem;
-}
-
 .bg-main {
   background-color: var(--bg);
   color: var(--color-heading);

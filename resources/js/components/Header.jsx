@@ -8,35 +8,25 @@ export default function Header({ light = true }) {
         <header className="bg-main">
             <Navbar bg="dark" variant={"dark"} expand="lg">
                 <Container>
-                    <Link to="/" className="nav-link">
+                    <Navbar.Brand as={Link} to="/">
                         <img id="logo-header" src={`img/${logo}.png`} alt="" />
-                    </Link>
+                    </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                    <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="me-auto" as="ul">
-                            <Nav.Item as="li">
-                                <Link to="/services">
-                                    Services
-                                </Link>
-                            </Nav.Item>
-                            <Nav.Item as="li">
-                                <Link to="/a-propos">
-                                    À propos
-                                </Link>
-                            </Nav.Item>
-                            <Nav.Item as="li" >
-                                <Link
-                                    to="/home#contact-form"
-                                    as="button"
-                                    className="nav-link btn btn-primary"
-                                >
-                                    Contact
-                                </Link>
-                            </Nav.Item>
+                    <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
+                        <Nav >
+                            <Nav.Link as={Link} to="/services">
+                                Services
+                            </Nav.Link>
+                            <Nav.Link as={Link} to="/a-propos">
+                                À propos
+                            </Nav.Link>
+                            <Nav.Link as={Link} to="/home#contact-form" className="nav-link btn btn-primary">
+                                Contact
+                            </Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-        </header>
+        </header >
     );
 }
