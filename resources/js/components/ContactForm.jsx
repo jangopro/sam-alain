@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import axios from "axios";
+import { Button, Form, FormControl, FormGroup, FormLabel } from "react-bootstrap";
 
 //TODO: for des label + id des inputs
 
@@ -9,16 +10,21 @@ export default function ContactForm() {
         name: "",
         email: "",
     });
+    const [submitting, setSubmitting] = useState(false)
 
     function onSubmitButton(event) {
         event.preventDefault();
+        setSubmitting(true)
         axios
-            .post("/games", {
+            .post("/contact", {
                 name: formData.name,
                 email: formData.email,
             })
             .then(function (response) {
                 console.log(response.data);
+            })
+            .finally(() => {
+                setSubmitting(false)
             });
     }
     return (
@@ -33,47 +39,44 @@ export default function ContactForm() {
                 </p>
             </div>
             <div>
-                <form onSubmit={onSubmitButton}>
+                <Form onSubmit={onSubmitButton}>
                     <div className="form-row">
-                        <div className="form-group col-md-6">
-                            <label htmlFor="nom">Nom:</label>
-                            <input
-                                type="text"
-                                className="form-control"
-                                id="nom"
-                                required
+                        <FormGroup controlId="nom">
+                            <FormLabel>Nom:</FormLabel>
+                            <FormControl
                                 onChange={(event) =>
                                     setFormData({
                                         ...formData,
                                         ["name"]: event.target.value,
                                     })
                                 }
+                                required
                             />
-                        </div>
-                        <div className="form-group col-md-6">
-                            <label htmlFor="inputPassword4">
-                                Adresse courriel:
-                            </label>
-                            <input
+                        </FormGroup>
+                        <FormGroup controlId="email">
+                            <FormLabel>Adresse courriel:</FormLabel>
+                            <FormControl
                                 type="email"
-                                className="form-control"
                                 onChange={(event) =>
                                     setFormData({
                                         ...formData,
                                         ["email"]: event.target.value,
                                     })
                                 }
+                                required
                             />
-                        </div>
+
+                        </FormGroup>
                     </div>
-                    <div className="form-group">
-                        <label htmlFor="">Brève description du besoin:</label>
-                        <textarea className="form-control" />
-                    </div>
-                    <button className="btn btn-primary" type="submit">
-                        Envoyer
-                    </button>
-                </form>
+                    <FormGroup controlId="description">
+                        <FormLabel>Brève description du besoin:</FormLabel>
+                        <FormControl as="textarea" rows={3} />
+                    </FormGroup>
+
+                    <Button variant={'primary'} type={'submit'} disabled={submitting}>
+                        {submitting ? 'Envoi en cours...' : 'Envoyer'}
+                    </Button>
+                </Form>
 
             </div>
         </section>
