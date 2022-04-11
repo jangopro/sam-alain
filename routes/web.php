@@ -13,8 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('{reactRoutes}', function () {
     return view('welcome');
-});
+})->where('reactRoutes', '^((?!api).)*$'); // except 'api' word
 
 Route::post('games', 'FormController@store');
