@@ -59,39 +59,43 @@ function ServiceElement({ title, description, icon }) {
 export default function Services() {
     return (
         <Container fluid="lg">
-            <h2>Services</h2>
-            <p>
-                Les services psychologiques sont offerts à l'ensemble de la
-                population. Contactez-moi afin de m'exposer votre situation. Les
-                services psychologiques sont remboursés par la majorité des
-                assureurs privés.
-            </p>
-            <Row>
-                <ServiceElement
-                    icon={element}
-                    description={descriptionPsychotherapie}
-                    title={"Psychothérapie"}
-                />
-                <ServiceElement
-                    icon={element}
-                    description={descriptionCoaching}
-                    title={"Coaching face aux enjeux relationnels"}
-                />
-            </Row>
-            <Row>
-                <ServiceElement
-                    icon={element}
-                    description={descriptionPreparationMentale}
-                    title={
-                        "Préparation mentale/psychologique pour un événement particulier "
-                    }
-                />
-                <ServiceElement
-                    icon={element}
-                    description={descriptionModalites}
-                    title={"Modalités"}
-                />
-            </Row>
+            <section>
+                <div className={"col-md-8 p-lg-5 mx-auto"}>
+                    <h2 className={"text-center"}>Services</h2>
+                    <p className={"lead"}>
+                        Les services psychologiques sont offerts à l'ensemble de
+                        la population. Contactez-moi afin de m'exposer votre
+                        situation. Les services psychologiques sont remboursés
+                        par la majorité des assureurs privés.
+                    </p>
+                </div>
+                <Row className={"mb-3"}>
+                    <ServiceElement
+                        icon={element}
+                        description={descriptionPsychotherapie}
+                        title={"Psychothérapie"}
+                    />
+                    <ServiceElement
+                        icon={element}
+                        description={descriptionCoaching}
+                        title={"Coaching face aux enjeux relationnels"}
+                    />
+                </Row>
+                <Row>
+                    <ServiceElement
+                        icon={element}
+                        description={descriptionPreparationMentale}
+                        title={
+                            "Préparation mentale/psychologique pour un événement particulier"
+                        }
+                    />
+                    <ServiceElement
+                        icon={element}
+                        description={descriptionModalites}
+                        title={"Modalités"}
+                    />
+                </Row>
+            </section>
         </Container>
     );
 }
