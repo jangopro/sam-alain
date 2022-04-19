@@ -4,7 +4,7 @@ import React from "react";
 
 export default function MainLayout({ children }) {
     return (
-        <div className="container">
+        <div>
             <Header />
             {children}
             <Footer />
