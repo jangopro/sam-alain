@@ -8,15 +8,14 @@ export default function About() {
                 <h2 className={"text-center"}>À propos</h2>
                 <Row>
                     <Col md={6}>
-                        <img
-                            src="https://picsum.photos/480/400?random=24398"
-                            alt=""
-                        />
-                        <figcaption>
-                            Dr Samuel Alain, D.Ps, psychologue
-                            <br />
-                            OPQ: 12907-16
-                        </figcaption>
+                        <div className={"text-center"}>
+                            <img src="/img/Samuel-2.png" width={"250"} alt="" />
+                            <figcaption>
+                                Dr Samuel Alain, D.Ps, psychologue
+                                <br />
+                                OPQ: 12907-16
+                            </figcaption>
+                        </div>
                     </Col>
                     <Col md={6}>
                         <p>
