@@ -63179,18 +63179,25 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return About; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/index.js");
+
 
 function About() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "\xC0 propos"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "row"
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Container"], {
+    fluid: "lg"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+    className: "text-center"
+  }, "\xC0 propos"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
+    md: 6
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-md-6"
+    className: "text-center"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "https://picsum.photos/480/700?random=24398",
+    src: "/img/Samuel-2.png",
+    width: "250",
     alt: ""
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("figcaption", null, "Dr Samuel Alain, D.Ps, psychologue", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "OPQ: 12907-16")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-md-6"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Je suis d\xE9tenteur d\u2019un baccalaur\xE9at en psychologie de l\u2019Universit\xE9 Laval et d\u2019un doctorat en psychologie clinique de l\u2019Universit\xE9 du Qu\xE9bec \xE0 Chicoutimi. Je suis psychologue clinicien membre de l\u2019Ordre des psychologues du Qu\xE9bec. En plus de mon int\xE9r\xEAt pour le fonctionnement humain, j\u2019ai un fort int\xE9r\xEAt pour le monde des affaires que j\u2019actualise par des \xE9tudes de deuxi\xE8me cycle en gestion des entreprises. Mon exp\xE9rience clinique aupr\xE8s d\u2019adultes vivant avec diverses probl\xE9matiques (anxi\xE9t\xE9, d\xE9pression, difficult\xE9s relationnelles, deuil, etc.) m\u2019a amen\xE9 \xE0 d\xE9velopper une approche professionnelle et centr\xE9e sur les besoins du client. Mes interventions sont bas\xE9es sur un savoir scientifique constamment mis \xE0 jour."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Fort d\u2019une exp\xE9rience clinique vari\xE9e (r\xE9seau de la sant\xE9, r\xE9seau de l\u2019\xE9ducation, pratique priv\xE9e), j\u2019adopte une approche qui s\u2019adapte aux besoins du client. Les interventions sont donc personnalis\xE9es en fonction de la probl\xE9matique pr\xE9sent\xE9e, des objectifs exprim\xE9s et des caract\xE9ristiques personnelles du client."))));
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("figcaption", null, "Dr Samuel Alain, D.Ps, psychologue", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "OPQ: 12907-16"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
+    md: 6
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Je suis d\xE9tenteur d\u2019un doctorat en psychologie clinique de l\u2019Universit\xE9 du Qu\xE9bec \xE0 Chicoutimi. Je suis psychologue clinicien membre de l\u2019Ordre des psychologues du Qu\xE9bec. Mon exp\xE9rience clinique aupr\xE8s de personnes vivant avec diverses probl\xE9matiques (anxi\xE9t\xE9, d\xE9pression, difficult\xE9s relationnelles, deuil, etc.) m\u2019a amen\xE9 \xE0 d\xE9velopper une approche professionnelle proactive et centr\xE9e sur les besoins du client. Mes interventions sont bas\xE9es sur un savoir scientifique constamment mis \xE0 jour."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Fort d\u2019une exp\xE9rience clinique vari\xE9e (r\xE9seau de la sant\xE9, r\xE9seau de l\u2019\xE9ducation, pratique priv\xE9e), j\u2019adopte une approche qui s\u2019adapte \xE0 la r\xE9alit\xE9 du client. Les interventions sont donc personnalis\xE9es en fonction de la probl\xE9matique pr\xE9sent\xE9e, des objectifs exprim\xE9s et des caract\xE9ristiques personnelles du client. Vous b\xE9n\xE9ficierez d\u2019un service actif visant une autonomisation rapide face \xE0 la gestion des situations auxquelles vous faites face.")))));
 }
 
 /***/ }),
