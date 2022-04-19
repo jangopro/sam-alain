@@ -9,7 +9,7 @@ export default function Header() {
 
     return (
         <header className="bg-main">
-            <Navbar bg="dark" variant={"dark"} expand="lg">
+            <Navbar variant={"dark"} expand="lg">
                 <Container>
                     <Navbar.Brand as={Link} to="/">
                         <img id="logo-header" src={`img/${logo}.png`} alt="" />

@@ -5,7 +5,9 @@ export default function About() {
     return (
         <Container fluid={"lg"}>
             <section>
-                <h2 className={"text-center"}>À propos</h2>
+                <div className={"col-md-8 p-lg-5 mx-auto"}>
+                    <h2 className={"text-center"}>À propos</h2>
+                </div>
                 <Row>
                     <Col md={6}>
                         <div className={"text-center"}>
