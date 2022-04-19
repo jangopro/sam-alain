@@ -14,15 +14,17 @@ function App() {
         <SiteContextProvider>
             <Router>
                 <Switch>
-                    <Route path="/services">
-                        <MainLayout>
-                            <Services />
-                        </MainLayout>
-                    </Route>
-                    <Route path="/a-propos">
-                        <MainLayout>
-                            <About />
-                        </MainLayout>
+                    <Route path="/home">
+                        <Route path="services">
+                            <MainLayout>
+                                <Services />
+                            </MainLayout>
+                        </Route>
+                        <Route path="a-propos">
+                            <MainLayout>
+                                <About />
+                            </MainLayout>
+                        </Route>
                     </Route>
                     <Route path="/home">
                         <MainLayout>
