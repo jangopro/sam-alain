@@ -62669,11 +62669,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _layouts_SecondLayout__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../layouts/SecondLayout */ "./resources/js/layouts/SecondLayout.jsx");
-/* harmony import */ var _pages_Services__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../pages/Services */ "./resources/js/pages/Services.jsx");
-/* harmony import */ var _pages_Welcome__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../pages/Welcome */ "./resources/js/pages/Welcome.jsx");
-/* harmony import */ var _contexts_siteSectionContext__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../contexts/siteSectionContext */ "./resources/js/contexts/siteSectionContext.jsx");
-
+/* harmony import */ var _pages_Services__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../pages/Services */ "./resources/js/pages/Services.jsx");
+/* harmony import */ var _pages_Welcome__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../pages/Welcome */ "./resources/js/pages/Welcome.jsx");
+/* harmony import */ var _contexts_siteSectionContext__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../contexts/siteSectionContext */ "./resources/js/contexts/siteSectionContext.jsx");
 
 
 
@@ -62685,18 +62683,16 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function App() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_contexts_siteSectionContext__WEBPACK_IMPORTED_MODULE_9__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_0__["BrowserRouter"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_0__["Switch"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_0__["Route"], {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_contexts_siteSectionContext__WEBPACK_IMPORTED_MODULE_8__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_0__["BrowserRouter"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_0__["Switch"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_0__["Route"], {
     path: "/services"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_layouts_MainLayout__WEBPACK_IMPORTED_MODULE_3__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_pages_Services__WEBPACK_IMPORTED_MODULE_7__["default"], null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_0__["Route"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_layouts_MainLayout__WEBPACK_IMPORTED_MODULE_3__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_pages_Services__WEBPACK_IMPORTED_MODULE_6__["default"], null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_0__["Route"], {
     path: "/a-propos"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_layouts_MainLayout__WEBPACK_IMPORTED_MODULE_3__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_pages_About__WEBPACK_IMPORTED_MODULE_1__["default"], null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_0__["Route"], {
     path: "/home"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_layouts_MainLayout__WEBPACK_IMPORTED_MODULE_3__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_Home__WEBPACK_IMPORTED_MODULE_2__["default"], null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_0__["Route"], {
-    path: "/home-2"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_layouts_SecondLayout__WEBPACK_IMPORTED_MODULE_6__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_Home__WEBPACK_IMPORTED_MODULE_2__["default"], null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_0__["Route"], {
     exact: true,
     path: "/"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_layouts_SecondLayout__WEBPACK_IMPORTED_MODULE_6__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_pages_Welcome__WEBPACK_IMPORTED_MODULE_8__["default"], null))))));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_pages_Welcome__WEBPACK_IMPORTED_MODULE_7__["default"], null)))));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (App);
@@ -63093,7 +63089,7 @@ var SiteContext = /*#__PURE__*/Object(react__WEBPACK_IMPORTED_MODULE_0__["create
 function SiteContextProvider(_ref) {
   var children = _ref.children;
 
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null),
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])("business"),
       _useState2 = _slicedToArray(_useState, 2),
       sectionChosen = _useState2[0],
       setSectionChosen = _useState2[1];
@@ -63153,30 +63149,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Header */ "./resources/js/components/Header.jsx");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-
-
-
-function MainLayout(_ref) {
-  var children = _ref.children;
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_Header__WEBPACK_IMPORTED_MODULE_1__["default"], null), children, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_0__["default"], null));
-}
-
-/***/ }),
-
-/***/ "./resources/js/layouts/SecondLayout.jsx":
-/*!***********************************************!*\
-  !*** ./resources/js/layouts/SecondLayout.jsx ***!
-  \***********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MainLayout; });
-/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/Footer */ "./resources/js/components/Footer.jsx");
-/* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Header */ "./resources/js/components/Header.jsx");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _hooks_useSiteSection__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../hooks/useSiteSection */ "./resources/js/hooks/useSiteSection.jsx");
 
 
@@ -63189,7 +63161,7 @@ function MainLayout(_ref) {
       isBusinessSide = _useSiteSection.isBusinessSide;
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-    "data-theme": isBusinessSide ? 'dark' : 'light'
+    "data-theme": isBusinessSide ? "dark" : "light"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_Header__WEBPACK_IMPORTED_MODULE_1__["default"], null), children, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_0__["default"], null));
 }
 
@@ -63244,6 +63216,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ "./node_modules/@fortawesome/free-solid-svg-icons/index.es.js");
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/index.js");
+
 
 
 
@@ -63251,44 +63225,54 @@ var element = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createEl
   className: "fa-2x",
   icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__["faCoffee"]
 });
+var descriptionCoaching = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, "Les relations peuvent \xEAtre complexes et g\xE9n\xE9rer de la d\xE9tresse ou de l\u2019insatisfaction. Apprenez \xE0 vous positionner de fa\xE7on plus avantageuse dans vos relations. Trouver un \xE9quilibre et un sentiment de confort face \xE0 des relations complexes ou conflictuelles. Comprenez la m\xE9canique des interactions qui constituent vos relations.");
+var descriptionPsychotherapie = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, "La psychoth\xE9rapie est un processus structur\xE9 de traitement de diff\xE9rentes situations de sant\xE9 psychologique. Le processus est bas\xE9 sur une approche psychoth\xE9rapeutique scientifiquement \xE9prouv\xE9e. L\u2019approche pr\xE9conis\xE9e pour la psychoth\xE9rapie et l\u2019approche cognitive comportementale");
+var descriptionPreparationMentale = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, "Vous faites face \xE0 un changement important dans votre vie ou \xE0 un d\xE9fi? Apprenez \xE0 vous positionner de fa\xE7on \xE0 faire face aux changements avec r\xE9silience, \xE0 aborder un d\xE9fi en pleine possession de vos moyens et \xE0 maximiser le r\xE9sultat de vos actions.");
+var descriptionModalites = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, "Profitez d\u2019une approche personnalis\xE9e. Le service est souple et adapt\xE9 \xE0 votre r\xE9alit\xE9. Les services psychologiques peuvent \xEAtre offerts sous forme de rencontres ponctuelles ou de suivis de courte ou de longue dur\xE9e");
+
+function ServiceElement(_ref) {
+  var title = _ref.title,
+      description = _ref.description,
+      icon = _ref.icon;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_3__["Col"], {
+    md: 6
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "row"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "col-md-1 align-middle"
+  }, icon), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "col-md-11"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3", null, title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, description))));
+}
+
 function Services() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", null, "Services"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "row"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "col-md-6"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "row"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "col-md-1 align-middle"
-  }, element), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "col-md-11"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3", null, "Psychoth\xE9rapie"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "Un processus structur\xE9 qui permet de traiter des situations telles que: anxi\xE9t\xE9, d\xE9pression, \xE9puisement, probl\xE9matiques relationnelles, difficult\xE9s d'adaptation...")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "col-md-6"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "row"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "col-md-1 align-middle"
-  }, element), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "col-md-11"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3", null, "D\xE9veloppement des habilet\xE9s humaines en gestion"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "Comprendre et interagir avec les personnalit\xE9s difficiles, maximiser votre influence, gagner en assurance et actualiser votre potentiel."))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "row"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "col-md-6"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "row"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "col-md-1 align-middle"
-  }, element), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "col-md-11"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3", null, "Formations sur mesure"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "Maximisation de la performance d\u2019\xE9quipe, restructuration des interactions en \xE9quipe, comprendre et g\xE9rer les personnalit\xE9s difficiles...")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "col-md-6"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "row"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "col-md-1 align-middle"
-  }, element), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "col-md-11"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3", null, "Gestion de situations inhabituelles"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "Donnez vous les ressources pour aider le capital humain de votre entreprise \xE0 s'adapter \xE0 une situation inhabituelle.")))))));
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_3__["Container"], {
+    fluid: "lg"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "col-md-8 p-lg-5 mx-auto"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", {
+    className: "text-center"
+  }, "Services"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+    className: "lead"
+  }, "Les services psychologiques sont offerts \xE0 l'ensemble de la population. Contactez-moi afin de m'exposer votre situation. Les services psychologiques sont rembours\xE9s par la majorit\xE9 des assureurs priv\xE9s.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_3__["Row"], {
+    className: "mb-3"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ServiceElement, {
+    icon: element,
+    description: descriptionPsychotherapie,
+    title: "Psychothérapie"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ServiceElement, {
+    icon: element,
+    description: descriptionCoaching,
+    title: "Coaching face aux enjeux relationnels"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_3__["Row"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ServiceElement, {
+    icon: element,
+    description: descriptionPreparationMentale,
+    title: "Préparation mentale/psychologique pour un événement particulier"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ServiceElement, {
+    icon: element,
+    description: descriptionModalites,
+    title: "Modalités"
+  }))));
 }
 
 /***/ }),
